@@ -19,6 +19,22 @@ p{
 
 }
 
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
   
   .carousel {
     position: relative;
@@ -76,6 +92,7 @@ p{
     font-size: 300%;
     text-transform: uppercase;
     color: #3498DB;
+    font-weight: medium;
 }
 
 .block p {
@@ -109,29 +126,49 @@ p{
     }
 
     .main{
-        margin-right: 5%;
-        margin-left: 5%;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    .main p{
+        text-align: justify;
+    }
+    .main h1
+    {
+    font-size: 300%;
+    letter-spacing: 0px;
+    text-align: center;
     }
 
-    .main h1{
-        font-size: 300%;
-        margin-top: 15%;
+.block img
+{
+    width: 1550;
+    height: 833;
+    margin-left: 1%; 
     }
 
-    .block img{
-        width: 1550;
-        height: 833;
-        margin-left: 1%; 
-        }
+    .block h2 
+    {
+        margin-top: 30px;
+        text-align: center;
+    }
 
-        .block h2 {
-            margin-top: 30px;
-            text-align: center;
-        }
-    
-        .block p {
-            margin-top: 30px;
-        }
+    .block p 
+    {
+        margin-top: 30px;
+    }
+
+    .tab
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .block
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1280px) {

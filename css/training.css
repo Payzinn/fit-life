@@ -12,6 +12,23 @@ header
     position: fixed;
     top: 0;
     }
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
         
 
 p{
@@ -103,10 +120,6 @@ margin-top: 10%;
 
 
     
-    .main a
-    {
-        
-    }
 
     .main
     {
@@ -117,9 +130,8 @@ margin-top: 10%;
 
     .main h1
     {
-    margin-top: 92px;
     font-size: 300%;
-    letter-spacing: 5px;
+    letter-spacing: 0px;
     text-align: center;
     }
 
