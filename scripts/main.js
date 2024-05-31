@@ -16,8 +16,8 @@ function toggleNavbar() {
 navbarToggler.addEventListener('click', toggleNavbar);
 
 function calculateBMI() {
-  var heightInput = document.querySelector('input[placeholder="Ваш рост (см)"]');
-  var weightInput = document.querySelector('input[placeholder="Ваш вес (кг)"]');
+  var heightInput = document.querySelector('input[placeholder="Ваш рост"]');
+  var weightInput = document.querySelector('input[placeholder="Ваш вес"]');
 
   if (heightInput.value && weightInput.value) {
     var height = parseInt(heightInput.value);
@@ -34,8 +34,8 @@ function calculateBMI() {
 var calculateButton = document.querySelector('.btn-primary');
 calculateButton.addEventListener('click', calculateBMI);
 
-var openModalButton = document.querySelector('.btn-openModal'); 
-var modal = new bootstrap.Modal(document.getElementById('modal1')); 
+var openModalButton = document.querySelector('.btn-openModal');
+var modal = new bootstrap.Modal(document.getElementById('modal1'));
 
 openModalButton.addEventListener("click", function() {
   modal.show();
