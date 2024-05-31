@@ -16,19 +16,30 @@ function toggleNavbar() {
 navbarToggler.addEventListener('click', toggleNavbar);
 
 function calculateBMI() {
-    var heightInput = document.querySelector('input[placeholder="Ваш рост"]');
-    var weightInput = document.querySelector('input[placeholder="Ваш вес"]');
+  var heightInput = document.querySelector('input[placeholder="Ваш рост (см)"]');
+  var weightInput = document.querySelector('input[placeholder="Ваш вес (кг)"]');
 
-    if (heightInput.value && weightInput.value) {
-        var height = parseInt(heightInput.value);
-        var weight = parseInt(weightInput.value);
+  if (!heightInput.value || !weightInput.value) {
+    alert("Пожалуйста, заполните все поля.");
+    return; // Прекращаем выполнение функции
+  }
 
-        var bmi = (weight / Math.pow(height / 100, 2)).toFixed(2);
+  if (isNaN(heightInput.value) || isNaN(weightInput.value)) {
+    alert("Введите только числа в поля роста и веса.");
+    return;
+  }
 
-        alert("Ваш ИМТ: " + bmi);
-    } else {
-        alert("Пожалуйста, заполните все поля.");
-    }
+  var height = parseInt(heightInput.value);
+  var weight = parseInt(weightInput.value);
+
+  if (height < 10 || weight < 1) {
+    alert("Введены некорректные данные. Проверьте поля роста и веса.");
+    return;
+  }
+
+  var bmi = (weight / Math.pow(height / 100, 2)).toFixed(2);
+
+  alert("Ваш ИМТ: " + bmi);
 }
 
 var calculateButton = document.querySelector('.btn-primary');
