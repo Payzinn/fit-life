@@ -16,24 +16,27 @@ function toggleNavbar() {
 navbarToggler.addEventListener('click', toggleNavbar);
 
 function calculateBMI() {
-    var heightInput = document.querySelector('input[placeholder="Ваш рост"]');
-    var weightInput = document.querySelector('input[placeholder="Ваш вес"]');
+  var heightInput = document.querySelector('input[placeholder="Ваш рост (см)"]');
+  var weightInput = document.querySelector('input[placeholder="Ваш вес (кг)"]');
 
-    if (heightInput.value && weightInput.value) {
-        var height = parseInt(heightInput.value);
-        var weight = parseInt(weightInput.value);
+  if (heightInput.value && weightInput.value) {
+    var height = parseInt(heightInput.value);
+    var weight = parseInt(weightInput.value);
 
-        var bmi = (weight / Math.pow(height / 100, 2)).toFixed(2);
+    var bmi = (weight / Math.pow(height / 100, 2)).toFixed(2);
 
-        alert("Ваш ИМТ: " + bmi);
-    } else {
-        alert("Пожалуйста, заполните все поля.");
-    }
+    alert("Ваш ИМТ: " + bmi);
+  } else {
+    alert("Пожалуйста, заполните все поля.");
+  }
 }
 
 var calculateButton = document.querySelector('.btn-primary');
 calculateButton.addEventListener('click', calculateBMI);
 
-openModalButton.addEventListener("click", function () {
-    modal.show();
-});
+var openModalButton = document.querySelector('.btn-openModal'); 
+var modal = new bootstrap.Modal(document.getElementById('modal1')); 
+
+openModalButton.addEventListener("click", function() {
+  modal.show();
+}); 
