@@ -16,36 +16,39 @@ function toggleNavbar() {
 navbarToggler.addEventListener('click', toggleNavbar);
 
 function calculateBMI() {
-    var heightInput = document.querySelector('input[placeholder="Ваш рост"]');
-    var weightInput = document.querySelector('input[placeholder="Ваш вес"]');
-  
-    var heightValue = heightInput.value.trim(); // Убираем лишние пробелы
-    var weightValue = weightInput.value.trim(); // Убираем лишние пробелы
-  
-    // Проверка на ввод числовых значений
-    if (!isNumeric(heightValue) || !isNumeric(weightValue)) {
+  var heightInput = document.querySelector('input[placeholder="Ваш рост"]');
+  var weightInput = document.querySelector('input[placeholder="Ваш вес"]');
+
+  var heightValue = heightInput.value.trim();
+  var weightValue = weightInput.value.trim();
+
+  if (heightValue === '' || weightValue === '') {
+      alert("Пожалуйста, заполните все поля.");
+      return;
+  }
+
+  if (!isNumeric(heightValue) || !isNumeric(weightValue)) {
       alert("Пожалуйста, введите числовые значения для роста и веса.");
       return;
-    }
-  
-    var height = parseInt(heightValue);
-    var weight = parseInt(weightValue);
-  
-    // Проверка на положительные значения роста и веса
-    if (height <= 0 || weight <= 0) {
+  }
+
+  var height = parseInt(heightValue);
+  var weight = parseInt(weightValue);
+
+  if (height <= 0 || weight <= 0) {
       alert("Пожалуйста, укажите корректные положительные значения для роста и веса.");
       return;
-    }
-  
-    var bmi = (weight / Math.pow(height / 100, 2)).toFixed(2);
-  
-    alert("Ваш ИМТ: " + bmi);
   }
-  
-  function isNumeric(value) {
-    return /^-?\d+$/.test(value); // Проверка на целое число (положительное или отрицательное)
-  }
-  
+
+  var bmi = (weight / Math.pow(height / 100, 2)).toFixed(2);
+
+  alert("Ваш ИМТ: " + bmi);
+}
+
+function isNumeric(value) {
+  return /^-?\d+$/.test(value);
+}
+
   var calculateButton = document.querySelector('.btn-primary');
   calculateButton.addEventListener('click', calculateBMI);
   
