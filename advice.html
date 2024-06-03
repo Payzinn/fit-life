@@ -44,15 +44,16 @@
       <div class="main">
         <h1 class="fw-bold fs-1">Рекомендации</h1>
 
-        <ul>
-          <li><a href="#gainmuscle"    class="fs-4">Рекомендации по набору мышц</a></li>
-          <li><a href="#water"         class="fs-4">Значение воды и правильного питания для атлета</a></li>
-          <li><a href="#calories"      class="fs-4">Суточная норма калорий</a></li>
-          <li><a href="#protein"       class="fs-4">Суточная норма белка</a></li>
-          <li><a href="#fats"          class="fs-4">Суточная норма жиров</a></li>
-          <li><a href="#carbohydrates" class="fs-4">Суточная норма углеводов</a></li>
-          <li><a href="#forbidden"     class="fs-4">Что нельзя есть при наборе мышечной массы</a></li>
-        </ul>
+        <div class="anchor">
+            <a href="#gainmuscle"    class="fs-4">Рекомендации по набору мышц</a>
+            <a href="#water"         class="fs-4">Значение воды и правильного питания для атлета</a>
+            <a href="#calories"      class="fs-4">Суточная норма калорий</a>
+            <a href="#protein"       class="fs-4">Суточная норма белка</a>
+            <a href="#fats"          class="fs-4">Суточная норма жиров</a>
+            <a href="#carbohydrates" class="fs-4">Суточная норма углеводов</a>
+            <a href="#forbidden"     class="fs-4">Что нельзя есть при наборе мышечной массы</a>
+            <a href="#imt" class="fs-4">Индекс массы тела</a>
+        </div>
 
         <div class="carbo" id="gainmuscle"></div>
         <div class="block">
@@ -206,8 +207,38 @@
           </ul>
           </p>
           <p class="fs-5">Сделайте ставку на натуральные продукты. Если хотите сосисок – приготовьте их сами, не покупайте в магазине. Или, по крайней мере, следите за надписями на упаковке. Откажитесь от вредных жиров. Оставьте привычку добавлять молоко и сахар в кофе или чай. Эти мелочи помогут нормализовать рацион и не допустят быстрого увеличения доли подкожного жира при наборе мышечной массы.</p>
-
         </div>
+
+
+        <div class="carbo" id="imt"></div>
+        <div class="block">
+          <h2 class="fs-1 fw-bold">ИМТ</h2>
+          <div class="tab">
+            <table class="table table-bordered mt-5">
+              <thead>
+                <tr>
+                  <th scope="col" class="text-center">Индекс массы тела</th>
+                  <th scope="col" class="text-center">Рекомендации</th>
+                </tr>
+              </thead>
+              <tbody class="fs-5">
+                <tr>
+                  <th scope="row">18.5 - 24.9</th>
+                  <td class="text-center">Ваш вес находится в норме. Рекомендуется поддерживать текущий уровень калорий.</td>
+                </tr>
+                <tr>
+                  <th scope="row">&lt; 18.5</th>
+                  <td class="text-center">Ваш вес ниже нормы. Рекомендуется увеличить потребление калорий для набора веса.</td>
+                </tr>
+                <tr>
+                  <th scope="row">&ge; 25</th>
+                  <td class="text-center">Ваш вес выше нормы. Рекомендуется уменьшить потребление калорий для снижения веса.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
       
       </div>
       <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">

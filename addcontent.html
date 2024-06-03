@@ -28,7 +28,7 @@
                         <a class="nav-link text-white  " href="pp.html">ПП</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white " href="advice.html">Советы</a>
+                        <a class="nav-link text-white " href="advice.html">Рекоммендации</a>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn text-white nav-link" data-bs-toggle="modal" data-bs-target="#modal1">ИМТ</button>
@@ -40,15 +40,23 @@
     </nav>
 </header>
 
-    <div class="main">
-        <h1 class="text-center fs-1">Добавление контента</h1>
-        <input type="text" name="" id="" placeholder="Заголовок">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Текст"></textarea>
-    </div>
-
-    <div class="buttin">
-        <button class="add-recipe" onclick="alert('Материал отправлен на проверку ожидайте!');">Разместить</button>
-    </div>
+<div class="main">
+    <h1 class="text-center fs-1">Добавление контента</h1>
+    <form id="contentForm" action="">
+        <div class="mb-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Электронная почта" required>
+        </div>
+        <input class="form-control" type="text" id="exampleFormControlInput2" placeholder="Заголовок" aria-label="default input example">
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Текст" rows="3"></textarea>
+        </div>
+        <div class="buttin">
+            <button class="btn btn-danger btn-lg" type="button" onclick="submitForm()">Разместить</button>
+        </div>
+    </form>
+</div>
+    
 
 
 

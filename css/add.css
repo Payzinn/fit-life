@@ -27,9 +27,7 @@ header {
     transition: .2s;
 }
 
-.add-recipe:hover {
-    background-color: #2978ac;
-}
+
 
 .buttin {
     margin-top: 1%;
@@ -51,40 +49,11 @@ header {
     margin-top: 5%;
 }
 
-.main input{
-    width: 50%;
-    height: 70px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 25%;
-}
 
-input::placeholder{
-    text-align: center;
-}
-
-input{
-    border-radius: 5px;
-}
-
-textarea{
-    border-radius: 5px;
-}
 
 @media (max-width: 576px) {
 
-    .add-recipe{
-        margin-top: 5%;
-        width: 300px;
-    }
 
-    .main input{
-        width: 70%;
-        height: 50px;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        margin-left: 15%;
-    }
     
 
     .main{

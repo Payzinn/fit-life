@@ -73,12 +73,12 @@ h4{
 }
 
 .main {
+    margin-top: 2%;
     margin-right: 25%;
     margin-left: 25%;
 }
 
 .main h1 {
-    margin-top: 6%;
     font-size: 390%;
     letter-spacing: 5px;
     text-align: center;
@@ -109,6 +109,31 @@ h4{
     margin-left: 0%;
     margin-top: 1%;
 }
+
+.anchor{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.anchor a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.anchor a:hover {
+    background-color: #E74C3C;
+    color: white;
+}
+
+
 
 @media (max-width: 576px) {
 
